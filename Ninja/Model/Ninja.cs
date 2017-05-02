@@ -5,7 +5,7 @@ namespace Ninja.Model
 {
     public class Ninja : INinja
     {
-        private IWeapon currentWeapon;
+        public IWeapon CurrentWeapon { get; private set; }
 
         public Ninja()
         {
@@ -14,18 +14,18 @@ namespace Ninja.Model
         }
 
         public void ChangeWeapon(IWeapon weapon)
-        {
-            currentWeapon = weapon;
+        {   
+            CurrentWeapon = weapon;
         }
 
         public void DeliberateAttack()
         {
-            currentWeapon.DeliberateAttack();
+            CurrentWeapon.DeliberateAttack();
         }
 
         public void SwiftAttack()
         {
-            currentWeapon.SwiftAttack();
+            CurrentWeapon.SwiftAttack();
         }
     }
 }

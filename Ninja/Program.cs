@@ -16,6 +16,16 @@ namespace Ninja
             ninja.ChangeWeapon(new Shuriken());
             ninja.DeliberateAttack();
             ninja.SwiftAttack();
+
+            ISuperNinja superNinja = new Model.SuperNinja();
+            superNinja.SuperAttack();
+
+            superNinja.ChangeWeapon(new Katana() as ISuperWeapon);
+            superNinja.SuperAttack();
+
+            superNinja.ChangeWeapon(new Shuriken()as ISuperWeapon);
+            superNinja.SuperAttack();
+
         }
     }
 }
