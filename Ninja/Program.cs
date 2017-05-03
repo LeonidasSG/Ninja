@@ -1,4 +1,5 @@
 ﻿using Ninja.Intefaces;
+using Ninja.Model;
 using Ninja.Model.Weapon;
 
 namespace Ninja
@@ -17,14 +18,14 @@ namespace Ninja
             ninja.DeliberateAttack();
             ninja.SwiftAttack();
 
-            ISuperNinja superNinja = new Model.MasterNinja();
-            superNinja.DeadlyAttack();
+            IMasterNinja masterNinja = new MasterNinja();
+            masterNinja.DeadlyAttack();
 
-            superNinja.ChangeWeapon(new Katana());
-            superNinja.DeadlyAttack();
+            masterNinja.ChangeWeapon(new Katana());
+            masterNinja.DeadlyAttack();
 
-            superNinja.ChangeWeapon(new Shuriken());
-            superNinja.DeadlyAttack();
+            masterNinja.ChangeWeapon(new Shuriken());
+            masterNinja.DeadlyAttack();
 
         }
     }

@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Intefaces\INinja.cs" />
-    <Compile Include="Intefaces\ISuperNinja.cs" />
+    <Compile Include="Intefaces\IMasterNinja.cs" />
     <Compile Include="Intefaces\IWeapon.cs" />
     <Compile Include="Model\Ninja.cs" />
     <Compile Include="Model\MasterNinja.cs" />
