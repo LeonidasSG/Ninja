@@ -17,14 +17,14 @@ namespace Ninja
             ninja.DeliberateAttack();
             ninja.SwiftAttack();
 
-            ISuperNinja superNinja = new Model.SuperNinja();
-            superNinja.SuperAttack();
+            ISuperNinja superNinja = new Model.MasterNinja();
+            superNinja.DeadlyAttack();
 
-            superNinja.ChangeWeapon(new Katana() as ISuperWeapon);
-            superNinja.SuperAttack();
+            superNinja.ChangeWeapon(new Katana());
+            superNinja.DeadlyAttack();
 
-            superNinja.ChangeWeapon(new Shuriken()as ISuperWeapon);
-            superNinja.SuperAttack();
+            superNinja.ChangeWeapon(new Shuriken());
+            superNinja.DeadlyAttack();
 
         }
     }

@@ -3,14 +3,14 @@ using Ninja.Intefaces;
 
 namespace Ninja.Model.Weapon
 {
-    public class Katana : IWeapon, ISuperWeapon
+    public class Katana : IWeapon
     {
         public void DeliberateAttack()
         {
             Console.WriteLine("He knew it was coming but he couldn't do anything about it.");
         }
 
-        public void SuperAttack()
+        public void DeadlyAttack()
         {
             Console.WriteLine("Would you have a slice of your torso?");
         }

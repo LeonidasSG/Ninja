@@ -4,5 +4,6 @@
     {
         void DeliberateAttack();
         void SwiftAttack();
+        void DeadlyAttack();
     }
 }

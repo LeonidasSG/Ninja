@@ -5,7 +5,7 @@ namespace Ninja.Model
 {
     public class Ninja : INinja
     {
-        public IWeapon CurrentWeapon { get; private set; }
+        protected IWeapon CurrentWeapon { get; private set; }
 
         public Ninja()
         {

@@ -8,9 +8,6 @@ namespace Ninja.Intefaces
 {
     interface ISuperNinja : INinja
     {
-        void SuperAttack();
-
-        void ChangeWeapon(ISuperWeapon weapon);
-
+        void DeadlyAttack();
     }
 }
