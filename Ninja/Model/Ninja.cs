@@ -6,26 +6,33 @@ namespace Ninja.Model
     public class Ninja : INinja
     {
         protected IWeapon CurrentWeapon { get; private set; }
+        protected IOutput Output { get; private set; }
 
-        public Ninja()
+        public Ninja(IOutput output)
         {
+            Output = output;
+
             //Better. Might add some validation logic latter, like weight limits...
             ChangeWeapon(new EmptyHands());
         }
 
-        public void ChangeWeapon(IWeapon weapon)
+        public INinja ChangeWeapon(IWeapon weapon)
         {   
             CurrentWeapon = weapon;
+            Output.Dump($"Ninja switched to the weapon {weapon.GetType().Name}");
+            return this;
         }
 
-        public void DeliberateAttack()
+        public INinja DeliberateAttack()
         {
-            CurrentWeapon.DeliberateAttack();
+            Output.Dump(CurrentWeapon.DeliberateAttack());
+            return  this;
         }
 
-        public void SwiftAttack()
+        public INinja SwiftAttack()
         {
-            CurrentWeapon.SwiftAttack();
+            Output.Dump(CurrentWeapon.SwiftAttack());
+            return  this;
         }
     }
 }

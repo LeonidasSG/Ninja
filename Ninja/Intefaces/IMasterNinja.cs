@@ -2,6 +2,6 @@
 {
     public interface IMasterNinja : INinja
     {
-        void DeadlyAttack();
+        IMasterNinja DeadlyAttack();
     }
 }

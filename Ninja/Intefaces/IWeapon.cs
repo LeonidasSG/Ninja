@@ -2,8 +2,8 @@
 {
     public interface IWeapon
     {
-        void DeliberateAttack();
-        void SwiftAttack();
-        void DeadlyAttack();
+        string DeliberateAttack();
+        string SwiftAttack();
+        string DeadlyAttack();
     }
 }

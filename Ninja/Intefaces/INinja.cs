@@ -2,8 +2,8 @@
 {
     public interface INinja
     {
-        void ChangeWeapon(IWeapon weapon);
-        void DeliberateAttack();
-        void SwiftAttack();
+        INinja ChangeWeapon(IWeapon weapon);
+        INinja DeliberateAttack();
+        INinja SwiftAttack();
     }
 }

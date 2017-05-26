@@ -5,19 +5,19 @@ namespace Ninja.Model.Weapon
 {
     public class Shuriken : IWeapon
     {
-        public void DeliberateAttack()
+        public string DeliberateAttack()
         {
-            Console.WriteLine("Carefully aiming... Bullseye!");
+            return "Carefully aiming... Bullseye!";
         }
 
-        public void DeadlyAttack()
+        public string DeadlyAttack()
         {
-            Console.WriteLine("Fuck you! ... Rest in pieces!");
+            return "Fuck you! ... Rest in pieces!";
         }
 
-        public void SwiftAttack()
+        public string SwiftAttack()
         {
-            Console.WriteLine("Quick draw! ...And one missed");
+            return "Quick draw! ...And one missed";
         }
     }
 }

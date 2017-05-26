@@ -1,6 +1,7 @@
 ﻿using Ninja.Intefaces;
 using Ninja.Model;
 using Ninja.Model.Weapon;
+using Ninja.UI;
 
 namespace Ninja
 {
@@ -8,17 +9,16 @@ namespace Ninja
     {
         public static void Main(string[] args)
         {
-            INinja ninja = new Model.Ninja();
+            INinja ninja = new Model.Ninja(new Output());
 
-            ninja.ChangeWeapon(new Katana());
-            ninja.DeliberateAttack();
-            ninja.SwiftAttack();
+            ninja.ChangeWeapon(new Katana())
+                .DeliberateAttack()
+                .SwiftAttack()
+                .ChangeWeapon(new Shuriken())
+                .DeliberateAttack()
+                .SwiftAttack();
 
-            ninja.ChangeWeapon(new Shuriken());
-            ninja.DeliberateAttack();
-            ninja.SwiftAttack();
-
-            IMasterNinja masterNinja = new MasterNinja();
+            IMasterNinja masterNinja = new MasterNinja(new Output());
             masterNinja.DeadlyAttack();
 
             masterNinja.ChangeWeapon(new Katana());

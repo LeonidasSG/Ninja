@@ -5,19 +5,19 @@ namespace Ninja.Model.Weapon
 {
     public class Katana : IWeapon
     {
-        public void DeliberateAttack()
+        public string DeliberateAttack()
         {
-            Console.WriteLine("He knew it was coming but he couldn't do anything about it.");
+            return "He knew it was coming but he couldn't do anything about it.";
         }
 
-        public void DeadlyAttack()
+        public string DeadlyAttack()
         {
-            Console.WriteLine("Would you have a slice of your torso?");
+            return "Would you have a slice of your torso?";
         }
 
-        public void SwiftAttack()
+        public string SwiftAttack()
         {
-            Console.WriteLine("There's no sign of suprise in his face as his head rolls on the floor.");
+            return "There's no sign of suprise in his face as his head rolls on the floor.";
         }
     }
 }

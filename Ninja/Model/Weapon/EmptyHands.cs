@@ -5,19 +5,19 @@ namespace Ninja.Model.Weapon
 {
     public class EmptyHands : IWeapon
     {
-        public void DeliberateAttack()
+        public string DeliberateAttack()
         {
-            Console.WriteLine("It is called null object.");
+            return "It is called null object.";
         }
 
-        public void DeadlyAttack()
+        public string DeadlyAttack()
         {
-            Console.WriteLine("There goes a dynamite with my bare hands!");
+            return "There goes a dynamite with my bare hands!";
         }
 
-        public void SwiftAttack()
+        public string SwiftAttack()
         {
-            Console.WriteLine("Google Null Object pattern.");
+            return "Google Null Object pattern.";
         }
     }
 }
